@@ -1,0 +1,159 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-image: url(../assets/images/image1.jpeg);
+    background-repeat: 0;
+    resize: all;
+}
+.menu {
+    background-color: #ffffff;
+    margin: 0px 100px 0px 100px;
+    border-block-end-style: solid;
+    border-block-end-color: lightgray;
+}
+
+
+.navbar {
+    padding: 15px;
+    width: 200px;
+    background-color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cccccc;
+   
+    }
+
+#list {
+    position: absolute;
+    top: 0;
+    right: 120px;
+    list-style-type: none;
+    padding: 10px;
+  }
+  li a {
+      text-decoration: none;
+      color: black;
+  }
+
+#a-1 {
+float: left;
+padding: 10px;
+border-right-style: solid;
+border-left-color: lightgrey;
+text-decoration: none;
+}
+#a-2 {
+float: left;
+padding: 10px;
+border-right-style: solid;
+border-left-color: lightgray;
+}
+#a-3 {
+float: left;
+padding: 10px;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color:white;
+    padding: 0;
+   margin-left: 20%;
+   margin-right: 20%;
+    margin-top: 20px;
+    margin-bottom: 40%; 
+    border-block-end-style:solid;
+    border-block-end-color: lightgray; 
+}
+.contact {
+    border-block-end-style: solid;
+    border-block-end-color: darkgrey;
+    padding: 10px;
+    color: teal;
+}
+
+
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    .foot {
+        display: block;
+        clear: both;
+        position: absolute;
+        bottom: 0;
+        color: #FFF;
+
+    }
+    #footer {
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 10px;
+    }
+}
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
